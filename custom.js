@@ -5,9 +5,8 @@ console.log(data1);
 ///////////////////////
 
 numbers1 = [1, 2, 3];
-for (var i = numbers1.length - 1; i >= 0; i--) {
-    console.log(numbers1[i]);
-}
+var reversed = numbers1.reverse();
+console.log(reversed);
 
 ///////////////////////////
 
@@ -30,3 +29,11 @@ console.log(data4);
 
 ///////////////////////
 
+const data = new Map([
+  ['a', 1],
+  ['b', 2]
+]);
+
+const fromPairs = Object.fromEntries(data);
+
+console.log(fromPairs);
